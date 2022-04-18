@@ -20,9 +20,6 @@ CustomPainter subclasses are used extensively to implement:
 ## Documentation
 Code documentation is available [here](https://tyler-conrad.github.io/flutter_charts_mockup/).
 
-## Web Demo
-A demo of the application is available [here](https://tyler-conrad.github.io/flutter_charts_mockup/demo/demo.html).
-
 ## Tested on
 Platform:
  - Ubuntu 20.04.4 LTS
