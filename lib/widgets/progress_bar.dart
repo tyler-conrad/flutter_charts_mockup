@@ -129,10 +129,9 @@ class _ProgressBarState extends m.State<ProgressBar>
     final colors = m.Theme.of(context).colorScheme;
     final fontSize = s.r(_fontSize);
     final cornerRadius = s.r(_cornerRadius);
-
     final outerPadding = s.r(_outerPadding);
+    final innerPadding = s.r(_innerPadding);
 
-    const innerPadding = _innerPadding;
     return m.Row(
       crossAxisAlignment: m.CrossAxisAlignment.stretch,
       children: [
@@ -152,7 +151,7 @@ class _ProgressBarState extends m.State<ProgressBar>
                 ),
               ),
               child: m.Padding(
-                padding: const m.EdgeInsets.all(innerPadding),
+                padding: m.EdgeInsets.all(innerPadding),
                 child: svg.SvgPicture.asset(
                   widget._type == ProgressBarType.red
                       ? 'assets/svg/down_arrow.svg'
