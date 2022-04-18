@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the buildLinePath function from the path library, for the Dart programming language.">
+  <title>buildLinePath function - path library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">flutter_charts_mockup</a></li>
+    <li><a href="../canvas_path/canvas_path-library.html">path</a></li>
+    <li class="self-crumb">buildLinePath function</li>
+  </ol>
+  <div class="self-name">buildLinePath</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-function">buildLinePath</span> function 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    <section class="multi-line-signature">
+        
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-ui/Path-class.html">Path</a></span>
+<span class="name ">buildLinePath</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="buildLinePath-param-size"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Size-class.html">Size</a></span> <span class="parameter-name">size</span>, </span></li>
+<li><span class="parameter" id="buildLinePath-param-chartLeftPadding"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">chartLeftPadding</span>, </span></li>
+<li><span class="parameter" id="buildLinePath-param-halfHeight"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">halfHeight</span>, </span></li>
+<li><span class="parameter" id="buildLinePath-param-verticalFactors"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span>&gt;</span></span> <span class="parameter-name">verticalFactors</span>, </span></li>
+<li><span class="parameter" id="buildLinePath-param-ease"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">ease</span>, </span></li>
+<li><span class="parameter" id="buildLinePath-param-verticalOffset">[<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">verticalOffset</span> = <span class="default-value">0.0</span>]</span></li>
+</ol>)
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Builds an <a href="https://api.flutter.dev/flutter/dart-ui/Path-class.html">m.Path</a> used for graphs containing curves.</p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">m.Path buildLinePath(
+  m.Size size,
+  double chartLeftPadding,
+  double halfHeight,
+  List&lt;double&gt; verticalFactors,
+  double ease, [
+  double verticalOffset = 0.0,
+]) {
+  final topPoints = c.curvedPathPoints(
+    size,
+    chartLeftPadding,
+    halfHeight,
+    verticalFactors,
+    ease,
+    verticalOffset,
+  );
+
+  final path = m.Path()
+    ..moveTo(
+      topPoints.first.first.dx,
+      topPoints.first.first.dy,
+    );
+
+  for (final pair in topPoints.skip(1)) {
+    path.quadraticBezierTo(
+      pair.first.dx,
+      pair.first.dy,
+      pair.last.dx,
+      pair.last.dy,
+    );
+  }
+
+  path.lineTo(
+    size.width,
+    halfHeight + halfHeight * verticalFactors.last * ease + verticalOffset,
+  );
+
+  path.lineTo(
+    size.width,
+    halfHeight + halfHeight * verticalFactors.last * ease,
+  );
+
+  final bottomPoints = c
+      .curvedPathPoints(
+        size,
+        chartLeftPadding,
+        halfHeight,
+        verticalFactors,
+        ease,
+        0.0,
+      )
+      .toList()
+      .reversed;
+
+  path.lineTo(
+    bottomPoints.first.last.dx,
+    bottomPoints.first.last.dy,
+  );
+
+  for (int i = 0; i &lt; bottomPoints.length - 1; i++) {
+    path.quadraticBezierTo(
+      bottomPoints.skip(i).first.first.dx,
+      bottomPoints.skip(i).first.first.dy,
+      bottomPoints.skip(i + 1).first.last.dx,
+      bottomPoints.skip(i + 1).first.last.dy,
+    );
+  }
+
+  path.lineTo(
+    chartLeftPadding,
+    halfHeight + halfHeight * verticalFactors.first * ease,
+  );
+
+  return path..close();
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">flutter_charts_mockup</a></li>
+  <li><a href="../canvas_path/canvas_path-library.html">path</a></li>
+  <li class="self-crumb">buildLinePath function</li>
+</ol>
+
+
+    <h5>path library</h5>
+    <ol>
+
+
+
+
+
+  <li class="section-title"><a href="../canvas_path/canvas_path-library.html#functions">Functions</a></li>
+  <li><a href="../canvas_path/buildLinePath.html">buildLinePath</a></li>
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter_charts_mockup
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
