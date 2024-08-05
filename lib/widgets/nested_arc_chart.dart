@@ -38,7 +38,8 @@ class NestedArcChartPainter extends m.CustomPainter {
     final colors = m.Theme.of(_context).colorScheme;
     for (int i = 0; i < _numCircles * 2; i++) {
       final circleRadius = halfMinSideSize - s.arcWidth * i * 2.0;
-      final circleColor = i % 2 == 0 ? colors.surfaceVariant : colors.surface;
+      final circleColor =
+          i % 2 == 0 ? colors.surfaceContainerHighest : colors.surface;
       p.Circle(
         center: center,
         radius: circleRadius,
@@ -89,7 +90,7 @@ class NestedArcChartPainter extends m.CustomPainter {
 }
 
 class NestedArcChart extends m.StatefulWidget {
-  const NestedArcChart({m.Key? key}) : super(key: key);
+  const NestedArcChart({super.key});
 
   @override
   m.State<NestedArcChart> createState() => _NestedArcChartState();

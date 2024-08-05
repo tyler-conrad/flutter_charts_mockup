@@ -20,16 +20,11 @@ import 'package:flutter_charts_mockup/widgets/pointer_drag_listener.dart'
 class FilledLineChartPainter
     extends lcpb.LineChartPainterBase<vf.FilledLineChartVerticalFactors> {
   FilledLineChartPainter({
-    required vf.FilledLineChartVerticalFactors verticalFactors,
-    required double ease,
-    required m.Offset? dragPos,
-    required m.BuildContext context,
-  }) : super(
-          verticalFactors: verticalFactors,
-          ease: ease,
-          dragPos: dragPos,
-          context: context,
-        );
+    required super.verticalFactors,
+    required super.ease,
+    required super.dragPos,
+    required super.context,
+  });
 
   @override
   void paint(
@@ -175,7 +170,7 @@ class FilledLineChartPainter
 /// Chart with a curve filled with a gradient and a tooltip positioned on the
 /// curve at the x position of a pointer drag.
 class FilledLineChart extends m.StatefulWidget {
-  const FilledLineChart({m.Key? key}) : super(key: key);
+  const FilledLineChart({super.key});
 
   @override
   m.State<FilledLineChart> createState() => _FilledLineChartState();

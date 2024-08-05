@@ -7,12 +7,11 @@ import 'package:flutter_charts_mockup/canvas/primitives.dart' as p;
 /// Paints seven [p.DayBar]s.
 class WeekPeriodBarChartPainter extends m.CustomPainter {
   WeekPeriodBarChartPainter(
-      {m.Listenable? repaint,
+      {super.repaint,
       required Iterable<p.DayBar> bars,
       required double heightFactor})
       : _bars = bars,
-        _heightFactor = heightFactor,
-        super(repaint: repaint);
+        _heightFactor = heightFactor;
 
   final Iterable<p.DayBar> _bars;
   final double _heightFactor;
@@ -36,7 +35,7 @@ class WeekPeriodBarChartPainter extends m.CustomPainter {
 /// Chart with two vertical bars of different colors a pair of which is drawn
 /// for each day of the week.
 class WeekPeriodBarChart extends m.StatefulWidget {
-  const WeekPeriodBarChart({m.Key? key}) : super(key: key);
+  const WeekPeriodBarChart({super.key});
 
   static const int numDaysInWeek = 7;
 

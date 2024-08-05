@@ -13,12 +13,11 @@ import 'package:flutter_charts_mockup/widgets/chart_state.dart' as cs;
 /// arcs are animated based on a normalized tween value.
 class FixedOverlappingArcChartPainter extends m.CustomPainter {
   FixedOverlappingArcChartPainter({
-    m.Listenable? repaint,
+    super.repaint,
     required double sweepAngleFactor,
     required m.ColorScheme colors,
   })  : _sweepAngleFactor = sweepAngleFactor,
-        _colors = colors,
-        super(repaint: repaint) {
+        _colors = colors {
     _width = s.arcWidth * 2.0;
   }
 
@@ -64,7 +63,7 @@ class FixedOverlappingArcChartPainter extends m.CustomPainter {
     p.Circle(
       center: center,
       radius: halfMinSideSize,
-      color: _colors.surfaceVariant,
+      color: _colors.surfaceContainerHighest,
     ).paint(
       canvas,
       size,
@@ -99,7 +98,7 @@ class FixedOverlappingArcChartPainter extends m.CustomPainter {
 }
 
 class FixedOverlappingArcChart extends m.StatefulWidget {
-  const FixedOverlappingArcChart({m.Key? key}) : super(key: key);
+  const FixedOverlappingArcChart({super.key});
 
   @override
   m.State<FixedOverlappingArcChart> createState() =>

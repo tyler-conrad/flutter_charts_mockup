@@ -15,16 +15,11 @@ import 'package:flutter_charts_mockup/canvas/tooltip.dart' as tt;
 /// based the curves y value from the x position of a pointer drag.
 class CurrencyChartPainter extends lcpb.LineChartPainterBase {
   CurrencyChartPainter({
-    required vf.CurrencyChartVerticalFactors verticalFactors,
-    required double ease,
-    required m.Offset? dragPos,
-    required m.BuildContext context,
-  }) : super(
-          verticalFactors: verticalFactors,
-          ease: ease,
-          dragPos: dragPos,
-          context: context,
-        );
+    required vf.CurrencyChartVerticalFactors super.verticalFactors,
+    required super.ease,
+    required super.dragPos,
+    required super.context,
+  });
 
   @override
   void paint(m.Canvas canvas, m.Size size) {
@@ -66,7 +61,7 @@ class CurrencyChartPainter extends lcpb.LineChartPainterBase {
 /// A chart displaying two curves for currency prices.  Includes a [tt.ToolTip] that
 /// is drawn at the x coordinate of a mouse drag.
 class CurrencyChart extends m.StatefulWidget {
-  const CurrencyChart({m.Key? key}) : super(key: key);
+  const CurrencyChart({super.key});
 
   @override
   m.State<CurrencyChart> createState() => _CurrencyChartState();

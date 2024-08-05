@@ -44,7 +44,7 @@ class ProgressBarPainter extends m.CustomPainter {
       center: center,
       crossAxisSize: size.height * 0.8,
       mainAxisSize: size.width,
-      color: colors.surfaceVariant,
+      color: colors.surfaceContainerHighest,
     ).paint(
       canvas,
       size,
@@ -74,10 +74,9 @@ class ProgressBarPainter extends m.CustomPainter {
 /// A progress bar widget with an icon, percent label and progress bar.
 class ProgressBar extends m.StatefulWidget {
   const ProgressBar({
-    m.Key? key,
+    super.key,
     required ProgressBarType type,
-  })  : _type = type,
-        super(key: key);
+  }) : _type = type;
 
   final ProgressBarType _type;
 

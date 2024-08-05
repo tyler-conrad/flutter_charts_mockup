@@ -13,10 +13,9 @@ enum LegendItemType {
 /// Paints a dot in red or yellow to the left of the legend label.
 class LegendDotPainter extends m.CustomPainter {
   const LegendDotPainter({
-    m.Listenable? repaint,
+    super.repaint,
     required m.Color color,
-  })  : _color = color,
-        super(repaint: repaint);
+  }) : _color = color;
 
   static const _dotRadius = 4.0;
 
@@ -50,10 +49,9 @@ class LegendDotPainter extends m.CustomPainter {
 /// and a label for the currency type.
 class LegendItem extends m.StatelessWidget {
   LegendItem({
-    m.Key? key,
+    super.key,
     required LegendItemType type,
-  })  : _type = type,
-        super(key: key);
+  }) : _type = type;
   final double _spacerSize = s.r(12.0);
   final LegendItemType _type;
 

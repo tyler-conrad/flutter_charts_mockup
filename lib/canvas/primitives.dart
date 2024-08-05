@@ -234,7 +234,7 @@ class DayBar {
       ),
       crossAxisSize: _width,
       mainAxisSize: backgroundHeight,
-      color: colors.surfaceVariant,
+      color: colors.surfaceContainerHighest,
       orientation: m.Orientation.portrait,
     ).paint(
       canvas,

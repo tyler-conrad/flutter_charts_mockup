@@ -3,12 +3,11 @@ import 'package:flutter/material.dart' as m;
 /// Detects pointer drags and calls the callback [_onPointerDrag].
 class PointerDragListener extends m.StatefulWidget {
   const PointerDragListener({
-    m.Key? key,
+    super.key,
     required void Function(m.Offset?) onPointerDrag,
     required m.Widget child,
   })  : _onPointerDrag = onPointerDrag,
-        _child = child,
-        super(key: key);
+        _child = child;
 
   final void Function(m.Offset?) _onPointerDrag;
   final m.Widget _child;

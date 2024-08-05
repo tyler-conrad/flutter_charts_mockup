@@ -126,7 +126,7 @@ class StackedBarChartPainter extends m.CustomPainter {
           center: m.Offset(dx, offset.dy),
           crossAxisSize: crossAxisSize,
           mainAxisSize: _factors.factors.last[i * 2] * size.height * _ease,
-          color: colors.surfaceVariant,
+          color: colors.surfaceContainerHighest,
           orientation: m.Orientation.portrait,
         ).paint(
           canvas,
@@ -162,7 +162,7 @@ class StackedBarChartVerticalFactors extends vf.VerticalFactors {
 }
 
 class StackedBarChart extends m.StatefulWidget {
-  const StackedBarChart({m.Key? key}) : super(key: key);
+  const StackedBarChart({super.key});
 
   static const _numStackedBars = 20;
 

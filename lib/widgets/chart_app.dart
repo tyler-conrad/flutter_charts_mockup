@@ -21,10 +21,8 @@ import 'package:flutter_charts_mockup/widgets/weekly_progress.dart' as wp;
 /// using [m.Expanded] widgets to size the cards displayed.
 class ChartApp extends m.StatefulWidget {
   const ChartApp({
-    m.Key? key,
-  }) : super(
-          key: key,
-        );
+    super.key,
+  });
 
   @override
   m.State<ChartApp> createState() => _ChartState();
@@ -44,15 +42,15 @@ class _ChartState extends m.State<ChartApp> {
       child: m.SingleChildScrollView(
         child: m.SizedBox(
           height: mediaQuery.size.width * (s.aspectHeight / s.aspectWidth),
-          child: m.Stack(
+          child: const m.Stack(
             children: [
               m.Padding(
-                padding: const m.EdgeInsets.all(
+                padding: m.EdgeInsets.all(
                   _screenPadding,
                 ),
                 child: m.Column(
                   crossAxisAlignment: m.CrossAxisAlignment.stretch,
-                  children: const [
+                  children: [
                     m.Expanded(
                       flex: 16,
                       child: c.Card(

@@ -6,12 +6,11 @@ import 'package:flutter_charts_mockup/widgets/legend_item.dart' as li;
 /// Wraps charts with a label.
 class Statistics extends m.StatelessWidget {
   const Statistics({
-    m.Key? key,
+    super.key,
     required m.Widget chart,
     bool buildLegend = false,
   })  : _chart = chart,
-        _buildLegend = buildLegend,
-        super(key: key);
+        _buildLegend = buildLegend;
 
   final m.Widget _chart;
   final bool _buildLegend;

@@ -33,10 +33,9 @@ class LegendPillPainter extends m.CustomPainter {
 /// Paints a colored pill and a label.
 class LegendLabel extends m.StatelessWidget {
   const LegendLabel({
-    m.Key? key,
+    super.key,
     required m.Color pillColor,
-  })  : _pillColor = pillColor,
-        super(key: key);
+  }) : _pillColor = pillColor;
   static const double _fontSize = 14.0;
 
   final m.Color _pillColor;

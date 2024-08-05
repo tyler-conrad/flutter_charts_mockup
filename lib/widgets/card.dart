@@ -6,7 +6,7 @@ import 'package:flutter_charts_mockup/shared.dart' as s;
 /// background color of the app.
 class Card extends m.StatelessWidget {
   const Card({
-    m.Key? key,
+    super.key,
     bool outerPadBottom = true,
     bool padChildOnLeft = true,
     bool padChildOnRight = true,
@@ -14,8 +14,7 @@ class Card extends m.StatelessWidget {
   })  : _outerPadBottom = outerPadBottom,
         _padChildOnLeft = padChildOnLeft,
         _padChildOnRight = padChildOnRight,
-        _child = child,
-        super(key: key);
+        _child = child;
 
   static const double _cornerRadius = 24.0;
   static const double _childPadding = 16.0;

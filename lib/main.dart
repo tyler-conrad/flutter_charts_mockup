@@ -13,12 +13,11 @@ void main() {
         fontFamily: 'Roboto',
         scaffoldBackgroundColor: backgroundColor,
         colorScheme: const m.ColorScheme.dark().copyWith(
-          background: backgroundColor,
           primary: const m.Color(0xFF3DD598),
           secondary: const m.Color(0xFFFF575F),
           tertiary: const m.Color(0xFFFFC542),
           surface: const m.Color(0xFF34434D),
-          surfaceVariant: const m.Color(0xFF2E3B43),
+          surfaceContainerHighest: const m.Color(0xFF2E3B43),
           onSurface: m.Colors.white,
           onSurfaceVariant: const m.Color(0xFF96A7AF),
           shadow: m.Colors.black.withOpacity(0.25),

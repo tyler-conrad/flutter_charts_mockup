@@ -15,13 +15,12 @@ import 'package:flutter_charts_mockup/widgets/currency_chart.dart' as cc;
 class LineChartPainterBase<T extends vf.VerticalFactors>
     extends m.CustomPainter {
   LineChartPainterBase({
-    m.Listenable? repaint,
+    super.repaint,
     required this.verticalFactors,
     required this.ease,
     required m.Offset? dragPos,
     required this.context,
-  })  : _dragPos = dragPos,
-        super(repaint: repaint);
+  }) : _dragPos = dragPos;
 
   static const double _lineWidth = 4.0;
   static const double _lineSigma = 4.0;

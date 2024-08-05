@@ -96,7 +96,7 @@ class AlternatingBarChartPainter extends m.CustomPainter {
 
 /// A chart with bars of alternating colors and heights.
 class AlternatingBarChart extends m.StatefulWidget {
-  const AlternatingBarChart({m.Key? key}) : super(key: key);
+  const AlternatingBarChart({super.key});
 
   static const _numAlternatingBars = 10;
 

@@ -6,10 +6,9 @@ import 'package:flutter_charts_mockup/widgets/legend_label.dart' as ll;
 /// Wraps a child widget with a title and legend.
 class WeeklyProgress extends m.StatelessWidget {
   const WeeklyProgress({
-    m.Key? key,
+    super.key,
     required m.Widget circularChartWidget,
-  })  : _circularChartWidget = circularChartWidget,
-        super(key: key);
+  }) : _circularChartWidget = circularChartWidget;
 
   final m.Widget _circularChartWidget;
 
