@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
 
 /// Widget that wraps all displayed charts providing a surface on top of the
 /// background color of the app.

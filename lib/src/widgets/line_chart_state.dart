@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/widgets/line_chart_state.dart' as lcs;
-import 'package:flutter_charts_mockup/widgets/filled_line_chart.dart' as flc;
-import 'package:flutter_charts_mockup/widgets/currency_chart.dart' as cc;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/widgets/line_chart_state.dart' as lcs;
+import 'package:flutter_charts_mockup/src/widgets/filled_line_chart.dart'
+    as flc;
+import 'package:flutter_charts_mockup/src/widgets/currency_chart.dart' as cc;
 
 /// Generic chart state that provides data initialization and animations for
 /// the [flc.FilledLineChart] and the [cc.CurrencyChart].

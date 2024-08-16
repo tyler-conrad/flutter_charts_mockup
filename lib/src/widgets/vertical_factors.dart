@@ -1,6 +1,7 @@
-import 'package:flutter_charts_mockup/widgets/filled_line_chart.dart' as flc;
-import 'package:flutter_charts_mockup/widgets/currency_chart.dart' as cc;
-import 'package:flutter_charts_mockup/widgets/alternating_bar_chart.dart'
+import 'package:flutter_charts_mockup/src/widgets/filled_line_chart.dart'
+    as flc;
+import 'package:flutter_charts_mockup/src/widgets/currency_chart.dart' as cc;
+import 'package:flutter_charts_mockup/src/widgets/alternating_bar_chart.dart'
     as abc;
 
 /// The abstract interface for vertical factors.

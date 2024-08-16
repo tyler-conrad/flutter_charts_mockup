@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/widgets/statistics.dart' as stats;
-import 'package:flutter_charts_mockup/widgets/weekly_progress.dart' as wp;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/widgets/statistics.dart' as stats;
+import 'package:flutter_charts_mockup/src/widgets/weekly_progress.dart' as wp;
 
 /// Draws the text used by the [stats.Statistics] widget and the
 /// [wp.WeeklyProgress] widget for the title labels.

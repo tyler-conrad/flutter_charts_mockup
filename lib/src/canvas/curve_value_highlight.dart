@@ -2,10 +2,11 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/canvas/curve.dart' as c;
-import 'package:flutter_charts_mockup/widgets/filled_line_chart.dart' as flc;
-import 'package:flutter_charts_mockup/widgets/currency_chart.dart' as cc;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/canvas/curve.dart' as c;
+import 'package:flutter_charts_mockup/src/widgets/filled_line_chart.dart'
+    as flc;
+import 'package:flutter_charts_mockup/src/widgets/currency_chart.dart' as cc;
 
 /// A circular highlight used on [flc.FilledLineChart] and [cc.CurrencyChart]
 /// at the curves y value based on the x value of a pointer drag.

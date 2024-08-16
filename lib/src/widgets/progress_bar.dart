@@ -2,9 +2,9 @@ import 'package:flutter/material.dart' as m;
 import 'package:flutter_svg/flutter_svg.dart' as svg;
 import 'package:visibility_detector/visibility_detector.dart' as vd;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/canvas/primitives.dart' as p;
-import 'package:flutter_charts_mockup/widgets/chart_state.dart' as cs;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/canvas/primitives.dart' as p;
+import 'package:flutter_charts_mockup/src/widgets/chart_state.dart' as cs;
 
 /// The two types of progress bars.
 enum ProgressBarType {

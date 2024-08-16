@@ -2,14 +2,16 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/canvas/path.dart' as p;
-import 'package:flutter_charts_mockup/canvas/tooltip.dart' as tt;
-import 'package:flutter_charts_mockup/canvas/curve_value_highlight.dart' as cvh;
-import 'package:flutter_charts_mockup/canvas/curve.dart' as c;
-import 'package:flutter_charts_mockup/widgets/vertical_factors.dart' as vf;
-import 'package:flutter_charts_mockup/widgets/filled_line_chart.dart' as flc;
-import 'package:flutter_charts_mockup/widgets/currency_chart.dart' as cc;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/canvas/path.dart' as p;
+import 'package:flutter_charts_mockup/src/canvas/tooltip.dart' as tt;
+import 'package:flutter_charts_mockup/src/canvas/curve_value_highlight.dart'
+    as cvh;
+import 'package:flutter_charts_mockup/src/canvas/curve.dart' as c;
+import 'package:flutter_charts_mockup/src/widgets/vertical_factors.dart' as vf;
+import 'package:flutter_charts_mockup/src/widgets/filled_line_chart.dart'
+    as flc;
+import 'package:flutter_charts_mockup/src/widgets/currency_chart.dart' as cc;
 
 /// Base [m.CustomPainter] used by the [flc.FilledLineChart] and the [cc.CurrencyChart].
 class LineChartPainterBase<T extends vf.VerticalFactors>

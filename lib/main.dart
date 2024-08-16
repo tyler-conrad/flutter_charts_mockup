@@ -1,7 +1,7 @@
 import 'package:responsive_sizer/responsive_sizer.dart' as sizer;
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/widgets/chart_app.dart' as ca;
+import 'flutter_charts_mockup.dart' as fcm;
 
 void main() {
   const backgroundColor = m.Color(0xFF222E34);
@@ -27,7 +27,7 @@ void main() {
         builder: (context, orientation, screenType) => child!,
       ),
       home: const m.Scaffold(
-        body: ca.ChartApp(),
+        body: fcm.ChartApp(),
       ),
     ),
   );

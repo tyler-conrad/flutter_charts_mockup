@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart' as m;
 import 'package:visibility_detector/visibility_detector.dart' as vd;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/widgets/vertical_factors.dart' as vf;
-import 'package:flutter_charts_mockup/widgets/line_chart_state.dart' as lcs;
-import 'package:flutter_charts_mockup/widgets/statistics.dart' as stats;
-import 'package:flutter_charts_mockup/widgets/line_chart_painter_base.dart'
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/widgets/vertical_factors.dart' as vf;
+import 'package:flutter_charts_mockup/src/widgets/line_chart_state.dart' as lcs;
+import 'package:flutter_charts_mockup/src/widgets/statistics.dart' as stats;
+import 'package:flutter_charts_mockup/src/widgets/line_chart_painter_base.dart'
     as lcpb;
-import 'package:flutter_charts_mockup/widgets/pointer_drag_listener.dart'
+import 'package:flutter_charts_mockup/src/widgets/pointer_drag_listener.dart'
     as pdl;
-import 'package:flutter_charts_mockup/canvas/tooltip.dart' as tt;
+import 'package:flutter_charts_mockup/src/canvas/tooltip.dart' as tt;
 
 /// Paints a red and yellow curve with a [tt.ToolTip] displaying a currency amount
 /// based the curves y value from the x position of a pointer drag.

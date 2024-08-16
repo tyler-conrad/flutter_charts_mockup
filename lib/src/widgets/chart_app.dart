@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/widgets/card.dart' as c;
-import 'package:flutter_charts_mockup/widgets/fixed_overlapping_arc_chart.dart'
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/widgets/card.dart' as c;
+import 'package:flutter_charts_mockup/src/widgets/fixed_overlapping_arc_chart.dart'
     as foac;
-import 'package:flutter_charts_mockup/widgets/week_period_bar_chart.dart'
+import 'package:flutter_charts_mockup/src/widgets/week_period_bar_chart.dart'
     as wpbc;
-import 'package:flutter_charts_mockup/widgets/filled_line_chart.dart' as flc;
-import 'package:flutter_charts_mockup/widgets/currency_chart.dart' as cc;
-import 'package:flutter_charts_mockup/widgets/nested_arc_chart.dart' as nac;
-import 'package:flutter_charts_mockup/widgets/progress_bar.dart' as pb;
-import 'package:flutter_charts_mockup/widgets/alternating_bar_chart.dart'
+import 'package:flutter_charts_mockup/src/widgets/filled_line_chart.dart'
+    as flc;
+import 'package:flutter_charts_mockup/src/widgets/currency_chart.dart' as cc;
+import 'package:flutter_charts_mockup/src/widgets/nested_arc_chart.dart' as nac;
+import 'package:flutter_charts_mockup/src/widgets/progress_bar.dart' as pb;
+import 'package:flutter_charts_mockup/src/widgets/alternating_bar_chart.dart'
     as abc;
-import 'package:flutter_charts_mockup/widgets/stacked_bar_chart.dart' as sbc;
-import 'package:flutter_charts_mockup/widgets/weekly_progress.dart' as wp;
+import 'package:flutter_charts_mockup/src/widgets/stacked_bar_chart.dart'
+    as sbc;
+import 'package:flutter_charts_mockup/src/widgets/weekly_progress.dart' as wp;
 
 /// The main widget that aggregates all of the charts and other widgets.
 ///

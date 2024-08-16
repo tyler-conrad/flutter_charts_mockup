@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/canvas/primitives.dart' as p;
-import 'package:flutter_charts_mockup/widgets/currency_chart.dart' as cc;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/canvas/primitives.dart' as p;
+import 'package:flutter_charts_mockup/src/widgets/currency_chart.dart' as cc;
 
 /// Legend item type displayed for the [cc.CurrencyChart].
 enum LegendItemType {

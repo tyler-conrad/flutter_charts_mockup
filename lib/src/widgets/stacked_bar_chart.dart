@@ -3,13 +3,13 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart' as m;
 import 'package:visibility_detector/visibility_detector.dart' as vd;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/canvas/curve.dart' as c;
-import 'package:flutter_charts_mockup/canvas/primitives.dart' as p;
-import 'package:flutter_charts_mockup/widgets/vertical_factors.dart' as vf;
-import 'package:flutter_charts_mockup/widgets/chart_state.dart' as cs;
-import 'package:flutter_charts_mockup/widgets/line_chart_state.dart' as lcs;
-import 'package:flutter_charts_mockup/widgets/statistics.dart' as s;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/canvas/curve.dart' as c;
+import 'package:flutter_charts_mockup/src/canvas/primitives.dart' as p;
+import 'package:flutter_charts_mockup/src/widgets/vertical_factors.dart' as vf;
+import 'package:flutter_charts_mockup/src/widgets/chart_state.dart' as cs;
+import 'package:flutter_charts_mockup/src/widgets/line_chart_state.dart' as lcs;
+import 'package:flutter_charts_mockup/src/widgets/statistics.dart' as s;
 
 /// Paints one of three possible vertical [p.Pill]s.  One for a background, one
 /// for a single vertical bar and for a pair of vertical bars.

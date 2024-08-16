@@ -4,18 +4,20 @@ Flutter project implementing the graphs from the Figma design available [here](h
 
 ![demo](assets/demo.gif)
 
-## Implementation
-CustomPainter subclasses are used extensively to implement:
-- Primitives for Circles, Pills, and ArcedPills that can be painted.
-- AlternatingBarChart
-- CurrencyChart
-- FilledLineChart
-- FixedOverlappingArcChart
-- NestedArcChart
-- ProgressBar
-- StackedBarChart
-- WeekPeriodBarChart
-- PointerDragListener
+### CustomPainter Subclasses
+
+The core of this library revolves around several `CustomPainter` subclasses, which are used to draw various chart components. These subclasses include:
+
+- **Primitives**: Basic shapes such as `Circles`, `Pills`, and `ArcedPills` that serve as building blocks for more complex charts.
+- **Charts**:
+  - `AlternatingBarChart`: A bar chart with alternating colors.
+  - `CurrencyChart`: A chart designed to display currency trends.
+  - `FilledLineChart`: A line chart with filled areas.
+  - `FixedOverlappingArcChart`: A chart with overlapping arcs.
+  - `NestedArcChart`: A chart with nested arcs.
+  - `ProgressBar`: A customizable progress bar.
+  - `StackedBarChart`: A bar chart with stacked segments.
+  - `WeekPeriodBarChart`: A bar chart representing weekly periods.
 
 ## Documentation
 Code documentation is available [here](https://tyler-conrad.github.io/flutter_charts_mockup/).
@@ -25,10 +27,10 @@ A demo of the application is available [here](https://flutter-charts-mockup.verc
 
 ## Tested on
 Platform:
--  macOS Sonoma 14.5
+-  macOS Sonoma 14.6.1
 
 Flutter:
-- Flutter 3.22.3 • channel stable • https://github.com/flutter/flutter.git
-- Framework • revision b0850beeb2 (3 weeks ago) • 2024-07-16 21:43:41 -0700
-- Engine • revision 235db911ba
-- Tools • Dart 3.4.4 • DevTools 2.34.3
+- Flutter 3.24.0 • channel stable • https://github.com/flutter/flutter.git
+- Framework • revision 80c2e84975 (2 weeks ago) • 2024-07-30 23:06:49 +0700
+- Engine • revision b8800d88be
+- Tools • Dart 3.5.0 • DevTools 2.37.2

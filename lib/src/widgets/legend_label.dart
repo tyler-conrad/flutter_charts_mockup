@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/canvas/primitives.dart' as p;
-import 'package:flutter_charts_mockup/widgets/weekly_progress.dart' as wp;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/canvas/primitives.dart' as p;
+import 'package:flutter_charts_mockup/src/widgets/weekly_progress.dart' as wp;
 
 /// Paints a colored pill for the [wp.WeeklyProgress] widget.
 class LegendPillPainter extends m.CustomPainter {

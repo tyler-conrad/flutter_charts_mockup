@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/canvas/dashed_line_level.dart' as dll;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/canvas/dashed_line_level.dart' as dll;
 
 /// Number of graph interval lines to draw.
 const int _numDashedLineLevels = 5;

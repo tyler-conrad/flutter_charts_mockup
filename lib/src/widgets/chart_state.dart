@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
 
 /// Generic state class meant to be used with composition to provide animation
 /// related functionality to different charts.

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/canvas/text.dart' as t;
-import 'package:flutter_charts_mockup/widgets/legend_item.dart' as li;
+import 'package:flutter_charts_mockup/src/canvas/text.dart' as t;
+import 'package:flutter_charts_mockup/src/widgets/legend_item.dart' as li;
 
 /// Wraps charts with a label.
 class Statistics extends m.StatelessWidget {

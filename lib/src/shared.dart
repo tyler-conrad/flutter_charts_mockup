@@ -4,8 +4,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart' as m;
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import 'package:flutter_charts_mockup/widgets/vertical_factors.dart' as vf;
-import 'package:flutter_charts_mockup/canvas/tooltip.dart' as tt;
+import 'widgets/vertical_factors.dart' as vf;
+import 'canvas/tooltip.dart' as tt;
 
 /// Used to determine the height of a [m.SizedBox] that is a child of a
 /// [m.SingleChildScrollView].

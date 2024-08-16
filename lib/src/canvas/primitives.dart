@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/shared.dart' as s;
-import 'package:flutter_charts_mockup/widgets/week_period_bar_chart.dart'
+import 'package:flutter_charts_mockup/src/shared.dart' as s;
+import 'package:flutter_charts_mockup/src/widgets/week_period_bar_chart.dart'
     as wpbc;
-import 'package:flutter_charts_mockup/canvas/text.dart' as t;
+import 'package:flutter_charts_mockup/src/canvas/text.dart' as t;
 
 /// Circle primitive that can be painted.
 class Circle {

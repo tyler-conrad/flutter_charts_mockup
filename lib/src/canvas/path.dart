@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/canvas/curve.dart' as c;
+import 'package:flutter_charts_mockup/src/canvas/curve.dart' as c;
 
 /// Builds an [m.Path] used for graphs containing curves.
 m.Path buildLinePath(

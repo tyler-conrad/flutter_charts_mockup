@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart' as m;
 
-import 'package:flutter_charts_mockup/canvas/text.dart' as t;
-import 'package:flutter_charts_mockup/widgets/legend_label.dart' as ll;
+import 'package:flutter_charts_mockup/src/canvas/text.dart' as t;
+import 'package:flutter_charts_mockup/src/widgets/legend_label.dart' as ll;
 
 /// Wraps a child widget with a title and legend.
 class WeeklyProgress extends m.StatelessWidget {
