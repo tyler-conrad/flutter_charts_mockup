@@ -2,7 +2,7 @@
 
 Flutter project implementing the graphs from the Figma design available [here](https://dribbble.com/shots/10904459-Marvie-iOS-App-UI-Kit-Dark-Theme?ref=uistore.design).
 
-![demo](assets/demo.gif)
+![](assets/demo.gif)
 
 ### CustomPainter Subclasses
 
@@ -20,10 +20,10 @@ The core of this library revolves around several `CustomPainter` subclasses, whi
   - `WeekPeriodBarChart`: A bar chart representing weekly periods.
 
 ## Documentation
-Code documentation is available [here](https://tyler-conrad.github.io/flutter_charts_mockup/).
+Code documentation is available [here](https://tyler-conrad.github.io/doc/flutter_charts_mockup/).
 
 ## Web Demo
-A demo of the application is available [here](https://flutter-charts-mockup.vercel.app).
+A demo of the application is available [here](https://tyler-conrad.github.io/flutter_charts_mockup/).
 
 ## Tested on
 Platform:
