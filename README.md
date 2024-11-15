@@ -30,7 +30,7 @@ Code documentation is available
 ## Web Demo
 
 A demo of the application is available
-[here](https://tyler-conrad.github.io/flutter_charts_mockup/).
+[here](https://tyler-conrad.github.io/charts_mockup/).
 
 ## Tested on
 
